@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+        .content{
+            height: 450px;
+            
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .game{
+            height: 350px;
+            width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 7.5px;
+
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border-radius: 1px;
+            border: none;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+            font-size: 50px;
+            color: blue;
+            background-color: brown;
+        }
+        #reset-btn{
+            padding: 5px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border: 3px;
+            border: none;
+        }
+        #new-btn{
+            padding: 5px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border: 3px;
+            border: none;  
+        }
+        #msg{
+            color: black;
+            font-size: 50px;
+        }
+        .msg-container{
+            height: 150px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik-Tac-Tok-Game</title>
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">winner</p>
+        <button id="new-btn">New Game</button>
+
+    </div>
+    <main>
+        <h1>Tik Tac Tok</h1>
+        <div class="content">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        </div> 
+       <button id="reset-btn">Reset-Game</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
